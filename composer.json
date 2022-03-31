@@ -1,0 +1,16 @@
+{
+  "name": "ItsKiani/zarar",
+  "description": "It's a lightweight framework with PHP",
+  "keywords": ["Framework","PHP"],
+  "license": "MIT",
+  "homepage": "https://github.com/ItsKiani/zarar",
+  "authors": [
+    {
+      "name": "Ali Kiani Nejad",
+      "email": "codewithkiani@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3|7.2.*|7.3.*|7.4.*|^8.0"
+  }
+}
