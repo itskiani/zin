@@ -1,2 +1,2 @@
 # zarar
-It's a lightweight framework with PHP
+It's a lightweight PHP framework.
