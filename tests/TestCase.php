@@ -1,6 +1,6 @@
 <?php
 
-namespace
+namespace ItsKiani\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
