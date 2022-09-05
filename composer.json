@@ -13,12 +13,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "ItsKiani\\Zarar\\App\\": "app"
+      "ItsKiani\\Zin\\App\\": "app"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ItsKiani\\Zarar\\Tests\\": "tests/"
+      "ItsKiani\\Zin\\Tests\\": "tests/"
     },
     "files": [
       "app/helpers.php"
