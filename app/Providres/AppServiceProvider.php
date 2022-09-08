@@ -8,7 +8,13 @@ class AppServiceProvider extends AbstractServiceProvider
 {
     public function provides(string $id): bool
     {
-        return true;
+        $services =[
+            Router::class,
+            'response',
+            'request',
+            'emitter'
+        ];
+        return in_array($id, $services);
     }
 
     public function register(): void
