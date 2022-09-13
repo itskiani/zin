@@ -5,6 +5,8 @@ use Dotenv\Exception\InvalidPathException;
 
 session_start();
 
+require_once __DIR__.'/../vendor/autoload.php';
+
 try {
     $env = Dotenv::createImmutable(base_path());
     $env->load();
