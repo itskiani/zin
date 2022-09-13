@@ -13,3 +13,5 @@ try {
 }catch (InvalidPathException $e){
     //
 }
+
+require_once base_path('bootstrap/container.php');
