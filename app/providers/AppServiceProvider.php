@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ItsKiani\Zin\App\providers;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Laminas\Diactoros\Response;
