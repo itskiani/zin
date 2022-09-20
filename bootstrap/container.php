@@ -2,5 +2,5 @@
 
 $container = new League\Container\Container();
 $container->addServiceProvider(
-    new App\Providers\AppServiceProvider()
+    new ItsKiani\Zin\App\providers\AppServiceProvider()
 );
