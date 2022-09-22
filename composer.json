@@ -14,15 +14,15 @@
   "autoload": {
     "psr-4": {
       "ItsKiani\\Zin\\App\\": "app"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "ItsKiani\\Zin\\Tests\\": "tests/"
     },
     "files": [
       "app/helpers.php"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ItsKiani\\Zin\\Tests\\": "tests/"
+    }
   },
   "require": {
     "php": "^8.0",
