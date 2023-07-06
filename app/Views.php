@@ -12,4 +12,10 @@ class Views
     {
         $this->twig = $twig;
     }
+
+    public function render($response)
+    {
+        $response->getBody()->write('Welcome');
+        return $response;
+    }
 }
