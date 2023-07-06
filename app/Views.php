@@ -14,10 +14,10 @@ class Views
         $this->twig = $twig;
     }
 
-    public function render(ResponseInterface $response, $view, $data = [])
+    public function render(ResponseInterface $response, $view, array $context = [])
     {
         $response->getBody()->write(
-            $this->twig->render($view, $data)
+            $this->twig->render($view, $context)
         );
 
         return $response;
