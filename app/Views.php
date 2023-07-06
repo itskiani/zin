@@ -2,6 +2,7 @@
 
 namespace ItsKiani\Zin\App;
 
+use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
 class Views
@@ -13,9 +14,12 @@ class Views
         $this->twig = $twig;
     }
 
-    public function render($response)
+    public function render(ResponseInterface $response, $view, $data = [])
     {
-        $response->getBody()->write('Welcome');
+        $response->getBody()->write(
+            $this->twig->render($view, $data)
+        );
+
         return $response;
     }
 }
