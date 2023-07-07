@@ -7,12 +7,9 @@ use Twig\Environment;
 
 class Views
 {
-    protected Environment $twig;
-
-    public function __construct(Environment $twig)
-    {
-        $this->twig = $twig;
-    }
+    public function __construct(
+        protected Environment $twig
+    ){}
 
     public function render(ResponseInterface $response, $view, array $context = [])
     {
