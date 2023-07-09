@@ -43,7 +43,9 @@
   "scripts": {
     "phpstan": [
       "./vendor/bin/phpstan analyse --memory-limit=3g"
-    ]
+    ],
+    "test": "./vendor/bin/pest",
+    "test-coverage": "./vendor/bin/pest --coverage"
   },
   "config": {
     "allow-plugins": {
