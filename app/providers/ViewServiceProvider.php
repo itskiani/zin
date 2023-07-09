@@ -2,6 +2,7 @@
 
 namespace ItsKiani\Zin\App\providers;
 
+use ItsKiani\Zin\App\Views;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
