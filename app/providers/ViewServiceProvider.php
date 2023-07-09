@@ -11,14 +11,24 @@ class ViewServiceProvider extends AbstractServiceProvider
 {
     public function provides(string $id): bool
     {
+        $services = [
+          Views::class
+        ];
+
+        return in_array($id, $services);
     }
 
     public function register(): void
     {
         $container = $this->getContainer();
-        $loader = new FilesystemLoader(base_path('views'));
-        $twig = new Environment($loader, [
-            'cache' => false
-        ]);
+
+        $container->addShared(Views::class, function(){
+            $loader = new FilesystemLoader(base_path('views'));
+            $twig = new Environment($loader, [
+                'cache' => false
+            ]);
+
+            return new Views($twig);
+        });
     }
 }
