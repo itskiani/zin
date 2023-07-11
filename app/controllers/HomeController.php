@@ -13,10 +13,8 @@ class HomeController
         protected Views $view
     ){}
 
-    public function index(RequestInterface $request) :ResponseInterface
+    public function index($request, $response)
     {
-        $response = new Response();
-        $response->getBody()->write('home');
-        return $response;
+        return $this->view->render($response);
     }
 }
