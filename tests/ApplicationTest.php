@@ -1,8 +1,9 @@
 <?php
 
-namespace ItsKiani\Zin\Tests;
+use ItsKiani\Zin\App\providers\AppServiceProvider;
 
-class ApplicationTest
-{
-
-}
+beforeEach(
+    closure: function (){
+        $this->app = AppServiceProvider::class;
+    },
+);
